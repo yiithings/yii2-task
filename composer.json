@@ -1,0 +1,37 @@
+{
+    "name": "yiithings/yii2-task",
+    "description": "Lightweight task scheduling system extension for Yii2 framework",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","task", "queue"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Panlatent",
+            "email": "panlatent@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-queue": "^2.0",
+        "yiisoft/yii2-redis": "^2.0",
+        "symfony/process": "^4.0"
+    },
+    "config": {
+        "fxp-asset": {
+            "installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "yiithings\\task\\": "src/"
+        }
+    },
+    "require-dev": {
+        "yiisoft/yii2-gii": "^2.0",
+        "yiister/yii2-gentelella": "^1.3"
+    }
+}
