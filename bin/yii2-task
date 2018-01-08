@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+
+use yiithings\task\BaseTask;
+use yiithings\task\console\Application;
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+$application = new Application('Yii2 Task', BaseTask::VERSION);
+$application->run();
